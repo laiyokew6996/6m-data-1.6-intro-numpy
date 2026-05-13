@@ -35,7 +35,7 @@ You run each code cell independently and see the result immediately below it.
 We’ll use notebooks to experiment with NumPy and to complete hands-on exercises.
 
 If you have never seen a notebook before, watch this short intro first:
-▶️ [Jupyter Notebook Tutorial for Beginners](https://www.youtube.com/watch?v=HW29067qVWk) (~8 min)
+▶️ [Jupyter Notebook Tutorial for Beginners](https://www.youtube.com/watch?v=HW29067qVWk) (the first 3 mins for a quick look, the remaining is optional)
 
 You do **not** need to understand everything yet; just get familiar with:
 
