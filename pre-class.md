@@ -61,7 +61,30 @@ In VS Code:
 
 After installation, restart VS Code if prompted.
 
-### 2.2. Test Jupyter notebooks in VS Code (local Python)
+### 2.2. What is an environment, and setting up `pds`
+
+**What is an environment?** A conda environment is an isolated Python installation with its own set of packages and versions — separate from your system Python and from other projects' environments. This course ships an `environment.yml` file that pins the exact packages (NumPy, Pandas, Jupyter, etc.) needed for the lessons. Creating an environment from it gives everyone the same versions, so code that runs for the instructor runs the same way for you — no "works on my machine" surprises, and no risk of breaking other Python projects on your computer.
+
+**Prerequisite:** conda installed (via [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or Anaconda). If you already set this up in an earlier lesson, skip ahead.
+
+Set up the environment:
+
+1. Open a terminal in VS Code (**Terminal → New Terminal**), in this repo's root folder (where `environment.yml` lives).  
+2. Create the environment:
+
+```bash
+conda env create -f environment.yml
+```
+
+3. Activate it:
+
+```bash
+conda activate pds
+```
+
+4. In VS Code, select this environment as the kernel: open the notebook, click the kernel picker (top-right of the notebook), and choose **pds**.
+
+### 2.3. Test Jupyter notebooks in VS Code (local Python)
 
 1. Open VS Code.  
      
@@ -69,20 +92,22 @@ After installation, restart VS Code if prompted.
      
 3. Type **Jupyter: Create New Jupyter Notebook** and select it.  
      
-4. In the first cell, type:
+4. Select the **pds** kernel (top-right of the notebook) if it isn't already selected.
+
+5. In the first cell, type:
 
 ```py
 import numpy as np
 np.__version__
 ```
 
-5. Run the cell (click the ▶ button).  
+6. Run the cell (click the ▶ button).  
      
-6. Confirm that the output shows a NumPy version and no error.
+7. Confirm that the output shows a NumPy version and no error.
 
 If this works, your local Jupyter environment in VS Code is ready.
 
-### 2.3. (Optional) Use Colab as the environment in VS Code
+### 2.4. (Optional) Use Colab as the environment in VS Code
 
 If you installed the **Colab** extension, you can run notebooks on Colab from within VS Code:
 
