@@ -75,7 +75,12 @@ Set up the environment:
 ```bash
 conda env create -f environment.yml
 ```
-
+> If there is an existing environment with the same name, run following command to replace it:
+>
+> ```bash
+> conda env update --file environment.yml --prune
+> ```
+>
 3. Activate it:
 
 ```bash
