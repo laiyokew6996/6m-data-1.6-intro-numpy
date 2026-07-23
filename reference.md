@@ -1,3 +1,15 @@
+## **Package vs Module**
+
+* **Module** \- single Python file (`.py`) containing code (functions, classes, variables) you can reuse. `numpy` itself is built out of many modules.
+
+* **Package** \- folder of related modules bundled together, distributed and installed as one unit (e.g. via `pip install numpy`). `numpy` is a package.
+
+  ```python
+  import numpy as np       # importing the numpy package
+  ```
+
+  When you write `np.array(...)`, `np` is just an alias pointing at the numpy package - everything you call through it (functions, methods, attributes below) lives inside that package.
+
 ## **Function vs Method vs Attribute**
 
 New to Python? These three terms look similar but mean different things:
